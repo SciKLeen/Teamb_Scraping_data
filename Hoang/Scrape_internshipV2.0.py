@@ -1,6 +1,5 @@
 import time
 import pandas
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from pandas import ExcelWriter
@@ -18,7 +17,8 @@ content = [];
 a_struct_time = time.localtime();
 ticks = time.mktime(a_struct_time);
 
-driver = webdriver.Chrome(r"C:\WebDrivers\chromedriver.exe");
+# get chromedriver dir
+driver = webdriver.Chrome(r"..\chromedriver.exe");
 
 #---------------------------------------------------------------
 for str in key_words: 

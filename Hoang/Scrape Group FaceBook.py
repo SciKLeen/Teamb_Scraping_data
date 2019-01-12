@@ -1,5 +1,6 @@
 import time
-#import pandas
+import numpy
+import pandas
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -14,7 +15,7 @@ index = 10;
 a_struct_time = time.localtime();
 ticks = time.mktime(a_struct_time);
 
-driver = webdriver.Chrome(r"C:\WebDrivers\chromedriver.exe");
+driver = webdriver.Chrome(r"..\Web_driver\chromedriver.exe");
 
 #load Page
 Height = driver.execute_script("return document.body.scrollHeight");
